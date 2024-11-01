@@ -6,6 +6,9 @@ This project is designed in a way that it can be **scaled up or down**, can use 
 
 [Access the Deployed Endpoint for Testing](https://www.genome.gov/)
 
+## Running Locally
+**If you want to run this locally you need to create** **.env file with including MongoDB key and Huggingface Key.**
+
 ## Pipeline Diagram
 ![alt text](https://github.com/OnurAsimIlhan/end-to-end-finetuning-gemma2/blob/main/diagram.png)
 
