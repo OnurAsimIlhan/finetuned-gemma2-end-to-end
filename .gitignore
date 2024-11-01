@@ -1,0 +1,8 @@
+venv/
+.env
+research/
+templates/
+outputs/
+logs/
+template.py
+model/

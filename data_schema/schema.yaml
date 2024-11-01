@@ -1,0 +1,16 @@
+columns:
+  - ACTIVITY_ID: int64
+  - ACTIVITY: int64
+  - ID: int64 
+  - SOURCE: int64
+  - YEAR: int64
+  - YEAR_RELEASED: int64
+  - REGION: int64
+  - SECTOR: int64
+  - CATEGORY: int64
+  - UNIT_TYPE: int64
+  - EMISSION_FACTORS: int64
+  - CO2E_CALCULATION_METHOD: int64
+  - LCA_ACTIVITY: int64
+  - DATA_VERSIONING: int64
+  - POTENTIAL_USE_CASES: int64
