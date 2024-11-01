@@ -1,6 +1,13 @@
 # Gemma2 End-to-End Fine-Tuning Pipeline
 
-This project demonstrates a complete, automated, and modular pipeline for fine-tuning and deploying machine learning models with Gemma2. It incorporates data ingestion, validation, transformation, model training, evaluation, and deployment using cloud and local compute options, all managed with GitHub Actions and Docker. The pipeline also integrates logging, visualization, and continuous deployment on Streamlit Cloud.
+This project demonstrates a complete, automated, and modular pipeline for fine-tuning and deploying fine tuned Gemma2 models. It incorporates data ingestion, validation, transformation, model training, evaluation, and deployment using cloud and local compute options, all managed with GitHub Actions and Docker. The pipeline also integrates logging, visualization, and continuous deployment on Streamlit Cloud.
+
+This project is designed in a way that it can be **scaled up or down**, can use **different LLM models**, based on custom input **choose models by accuracy and cost**. **Custom logs** helps to identify any problem occured during pipeline. This project can be improved by adding technologies such as **GKE**, **Grafana**.
+
+[Access the Deployed Endpoint for Testing](https://www.genome.gov/)
+
+## Pipeline Diagram
+![alt text](https://github.com/OnurAsimIlhan/end-to-end-finetuning-gemma2/blob/main/diagram.png)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -14,10 +21,9 @@ This project demonstrates a complete, automated, and modular pipeline for fine-t
 - [Deployment Options](#deployment-options)
 - [Logging and Monitoring](#logging-and-monitoring)
 - [Configuration](#configuration)
-- [Getting Started](#getting-started)
 
 ## Overview
-This project enables seamless data processing, model training, and deployment using Gemma2 with the following features:
+This project enables seamless data processing, model tuning, and deployment using Gemma2 with the following features:
 - Pushes data to MongoDB Atlas and ingests it using custom configurations.
 - Manages pipeline stages (data ingestion, validation, transformation, model training, and evaluation) with custom configurations and versioned artifacts.
 - Pushes models to Hugging Face Hub upon evaluation and creates a Streamlit Cloud endpoint for deployment.
@@ -52,9 +58,3 @@ Logging is handled through Logstash, with logs stored and visualized in Kibana, 
 
 ## Configuration
 Each stage operates based on a configurable YAML file, allowing flexibility in pipeline settings, such as database connections, transformation rules, and model parameters. 
-
-## Getting Started
-1. **Clone the Repository**: 
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
