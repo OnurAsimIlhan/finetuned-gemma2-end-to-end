@@ -4,7 +4,7 @@ This project demonstrates a complete, automated, and modular pipeline for fine-t
 
 This project is designed in a way that it can be **scaled up or down**, can use **different LLM models**, based on custom input **choose models by accuracy and cost**. **Custom logs** helps to identify any problem occured during pipeline. This project can be improved by adding technologies such as **GKE**, **Grafana**.
 
-[Access the Deployed Endpoint for Testing](https://www.genome.gov/)
+[Access the Deployed Endpoint for Testing](https://end-to-end-finetuning-gemma2-4kklzfzqtdpjuw2gmtcjapp.streamlit.app/)
 
 ## Running Locally
 **If you want to run this locally you need to create** **.env file with including MongoDB key and Huggingface Key.**
